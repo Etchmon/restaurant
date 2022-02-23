@@ -1,7 +1,9 @@
 // Imports
 import _ from 'lodash';
+import './reset.css';
 import './style.css';
 import nav from './nav';
+import header from './header';
 
 
 // Main component
@@ -10,6 +12,7 @@ function component() {
     element.setAttribute('id', 'content');
 
     element.appendChild(nav());
+    element.appendChild(header());
     console.log('hi');
 
     return element;
