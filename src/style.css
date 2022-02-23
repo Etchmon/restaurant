@@ -1,7 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   background: url("./image1.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+#content {
+  min-height: 100vh;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+.nav {
+  background-color: black;
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-links {
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+#nav-links a {
+  padding: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+#nav-links .active {
+  border-bottom: 3px solid antiquewhite;
+}
+
+.logo {
+  font-size: 5rem;
+  font-style: italic;
+  padding: 2rem;
+}
+
+#header {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+#header h1 {
+  padding: 10vh 15vw;
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: 10px;
+  font-style: italic;
+}
+
+#header span {
+  padding: 0 10vw 10vh 10vw;
+  font-size: 2rem;
+  border-bottom: 3px solid antiquewhite;
+  line-height: 1.5;
 }

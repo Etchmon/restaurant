@@ -3,7 +3,7 @@ const nav = () => {
     const logo = document.createElement('span');
     const navLinks = document.createElement('ul');
     const button = document.createElement('button');
-    const links = ['Home', 'Menu', 'Hours', 'Contact']
+    const links = ['Home', 'Menu', 'Hours', 'Contact'];
 
     element.setAttribute('class', 'nav');
     logo.setAttribute('class', 'logo');
@@ -15,8 +15,12 @@ const nav = () => {
     for (let i = 0; i < links.length; i++) {
         const a = document.createElement('a');
         a.innerHTML = links[i];
+        a.setAttribute('href', '#');
         navLinks.appendChild(a);
     }
+
+    let firstChild = navLinks.firstChild;
+    firstChild.setAttribute('class', 'active');
 
     navLinks.appendChild(button);
 
