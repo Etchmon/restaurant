@@ -48,7 +48,7 @@ const hours = () => {
         div.appendChild(time);
     }
 
-    title.innerHTML = 'Hours';
+    title.innerHTML = 'HOURS';
 
     element.appendChild(title);
     element.appendChild(div);
