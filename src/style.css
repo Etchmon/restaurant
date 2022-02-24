@@ -54,7 +54,7 @@ body {
   padding: 2rem;
 }
 
-#header {
+.header {
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
@@ -64,7 +64,7 @@ body {
   color: white;
 }
 
-#header h1 {
+.header h1 {
   padding: 10vh 15vw;
   font-size: 3rem;
   line-height: 1.2;
@@ -72,9 +72,25 @@ body {
   font-style: italic;
 }
 
-#header span {
+.header span {
   padding: 0 10vw 10vh 10vw;
   font-size: 2rem;
   border-bottom: 3px solid antiquewhite;
   line-height: 1.5;
+}
+
+.hours-section {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hours {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 1rem;
 }

@@ -37,6 +37,7 @@ function component() {
                 break;
             case 'Home':
                 element.appendChild(header());
+                break;
         }
     }
 
