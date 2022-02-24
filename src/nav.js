@@ -28,15 +28,15 @@ const nav = () => {
     logo.innerHTML = 'Cafe Sevilla';
     button.innerHTML = 'Reservation';
 
+    element.appendChild(logo);
+    element.appendChild(navLinks);
+
     function active() {
         let parentDom = this.parentElement;
         let currentActive = parentDom.getElementsByClassName('active')[0];
         currentActive.classList.remove('active');
         this.classList.add('active');
     }
-
-    element.appendChild(logo);
-    element.appendChild(navLinks);
 
     return element;
 }

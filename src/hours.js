@@ -18,7 +18,7 @@ const hours = () => {
     }
 
     title.innerHTML = 'Hours';
-    console.log(hours[0]);
+    console.log(hours.Monday);
 
     element.appendChild(title);
 
