@@ -12,8 +12,9 @@ function component() {
     element.setAttribute('id', 'content');
 
     element.appendChild(nav());
-    element.appendChild(header());
-    console.log('hi');
+
+    // element.appendChild(header());
+    // console.log('hi');
 
     return element;
 };

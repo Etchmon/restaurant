@@ -17,6 +17,11 @@ const hours = () => {
         Monday: '5pm - 10pm',
     }
 
+    title.innerHTML = 'Hours';
+    console.log(hours[0]);
+
+    element.appendChild(title);
+
 
     return element;
 }
