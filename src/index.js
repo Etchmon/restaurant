@@ -5,6 +5,7 @@ import './style.css';
 import nav from './nav';
 import header from './header';
 import hours from './hours';
+import contact from './contact';
 
 
 // Main component
@@ -37,6 +38,9 @@ function component() {
                 break;
             case 'Home':
                 element.appendChild(header());
+                break;
+            case 'Contact':
+                element.appendChild(contact());
                 break;
         }
     }
