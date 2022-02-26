@@ -9,6 +9,7 @@ const contact = () => {
     const phone = document.createElement('span');
 
     element.setAttribute('class', 'contact-section');
+    div.setAttribute('class', 'contact-info');
 
     const info = {
         email: "cafeSevilla@hotmail.com",
@@ -16,7 +17,7 @@ const contact = () => {
         phone: "(619) 233-5979",
     }
 
-    title.innerHtml = 'Contact Information';
+    title.innerHTML = 'Contact Information';
     email.innerHTML = info.email;
     address.innerHTML = info.address;
     phone.innerHTML = info.phone;
@@ -25,6 +26,7 @@ const contact = () => {
     div.appendChild(address);
     div.appendChild(phone);
 
+    element.appendChild(title);
     element.appendChild(div);
 
     return element;
