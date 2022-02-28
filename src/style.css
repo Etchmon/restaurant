@@ -58,6 +58,14 @@ section {
   border-bottom: 3px solid antiquewhite;
 }
 
+#res-btn {
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: darkcyan;
+  color: antiquewhite;
+}
+
 .logo {
   font-size: 5rem;
   font-style: italic;
@@ -73,7 +81,7 @@ section {
 }
 
 .hours-section h1 {
-  padding: 10vh 15vw 0;
+  padding: 5vh 15vw 0;
   font-size: 3rem;
   line-height: 1.2;
   letter-spacing: 10px;
@@ -82,12 +90,24 @@ section {
 }
 
 .contact-section h1 {
-  padding: 10vh 15vw 0;
+  padding: 5vh 15vw 0;
   font-size: 3rem;
   line-height: 1.2;
   letter-spacing: 10px;
   font-style: italic;
   border-bottom: 3px solid antiquewhite;
+}
+
+.menu-section > h1 {
+  padding: 5vh 15vw 0;
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: 10px;
+  font-style: italic;
+  border-bottom: 3px solid antiquewhite;
+
+  grid-column: 1 / 4;
+  grid-row: 1 / 1;
 }
 
 .header span {
@@ -118,4 +138,33 @@ section {
 
 .contact-info span {
   padding: 3vh;
+}
+
+.menu-section {
+  padding-bottom: 3rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: repeat(2, 1fr);
+  border-bottom: 3px solid antiquewhite;
+  padding: 3rem 5rem 1rem;
+}
+
+.card h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  justify-self: start;
+}
+
+.card span {
+  grid-column: 2 / 3;
+  grid-row: 1 / 1;
+  font-size: 2rem;
+}
+
+.card p {
+  font-size: 1.2rem;
+  padding-right: 3rem;
 }
