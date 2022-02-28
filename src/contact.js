@@ -13,8 +13,8 @@ const contact = () => {
 
     const info = {
         email: "cafeSevilla@hotmail.com",
-        address: "353 Fifth Ave, San Diego, CA 92101",
-        phone: "(619) 233-5979",
+        address: "353 Fifth Ave, Memphis, CA 92101",
+        phone: "(600) 233-5979",
     }
 
     title.innerHTML = 'Contact Information';
