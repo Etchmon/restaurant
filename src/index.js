@@ -6,6 +6,7 @@ import nav from './nav';
 import header from './header';
 import hours from './hours';
 import contact from './contact';
+import menu from './menu';
 
 
 // Main component
@@ -41,6 +42,9 @@ function component() {
                 break;
             case 'Contact':
                 element.appendChild(contact());
+                break;
+            case 'Menu':
+                element.appendChild(menu());
                 break;
         }
     }
