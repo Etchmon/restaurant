@@ -2,6 +2,8 @@
 
 This is a professional website for a restaurant built using HTML, CSS, and JavaScript. The website aims to showcase the restaurant's offerings and provide an interactive experience for visitors.
 
+![Screenshot](./Restaurant.gif)
+
 ## Features
 
 - Responsive Design: The website is fully responsive, ensuring optimal viewing experience across various devices and screen sizes.
